@@ -1,8 +1,5 @@
-//Given a list of employees, produce a list of employees with highest salary in their department.
-
 import java.util.*;
-
-
+//Given a list of employees, produce a list of employees with highest salary in their department.
 public class EmployeeSalary{
     private String Name;
     private int Salary;

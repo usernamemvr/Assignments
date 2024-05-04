@@ -66,13 +66,12 @@ public class EmployeeSalary{
         salaries.add(new EmployeeSalary("Frey", 9000, 14,"IND"));
 
         Set<String> departments = new HashSet<>();
-
+        List<EmployeeSalary> filteredSalaries = new LinkedList<>();
+        Map<String, EmployeeSalary> map = new HashMap<>();
+        EmployeeSalary maxSalaried = new EmployeeSalary("James", 0,0, "Germany");
         for (EmployeeSalary s : salaries) {
             departments.add(s.getDepartment());
         }
-        List<EmployeeSalary> filteredSalaries = new LinkedList<>();
-        Map<String, EmployeeSalary> map = new HashMap<>();
-        EmployeeSalary maxSalaried = new EmployeeSalary("James", 0,1, "Germany");
         for (String d : departments ){
             map.put(d,maxSalaried);
         }
